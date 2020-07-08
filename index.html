@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="margin: auto;">OpenGraph Tag Generator</h1>
+                <br />
+
+                <!-- start title -->
+                <div class="form-group row">
+                    <label for="title" class="col-4 col-form-label">Page Title</label>
+                    <div class="col-8">
+                        <input id="title" name="title" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <!-- end title -->
+
+                <!-- start url -->
+                <div class="form-group row">
+                    <label for="url" class="col-4 col-form-label">Page URL</label>
+                    <div class="col-8">
+                        <input id="url" name="url" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <!-- end url -->
+
+                <!-- start author -->
+                <div class="form-group row">
+                    <label for="author" class="col-4 col-form-label">Author</label>
+                    <div class="col-8">
+                        <input id="author" name="author" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <!-- end author-->
+
+                <!-- start description -->
+                <div class="form-group row">
+                    <label for="description" class="col-4 col-form-label">Description</label>
+                    <div class="col-8">
+                        <input id="description" name="description" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <!-- end description-->
+
+                <!-- start imageurl -->
+                <div class="form-group row">
+                    <label for="imageurl" class="col-4 col-form-label">OG Image Url <br /> (full url)</label>
+                    <div class="col-8">
+                        <input id="imageurl" name="imageurl" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <!-- end imageurl -->
+
+                <!-- start twitter -->
+                <div class="form-group row">
+                    <label for="twitterhandle" class="col-4 col-form-label">Twitter Handle</label>
+                    <div class="col-8">
+                        <input id="twitterhandle" name="twitterhandle" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <!-- end twitter-->
+
+                <!-- start submit button -->
+                <div class="form-group row">
+                    <div class="offset-4 col-8">
+                        <button name="submit" type="submit" class="btn btn-primary" onClick="generateTags()">Generate Tags</button>
+                    </div>
+                </div>
+                <!-- end submit button -->
+
+                <!-- result -->
+                <div class="form-group row" id="outputrow" class="result" style="display:none">
+                    <label for="output" class="col-4 col-form-label">Result</label>
+                    <div class="offset-4 col-8">
+                        <textarea id="output" name="output" cols="200" rows="5" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
